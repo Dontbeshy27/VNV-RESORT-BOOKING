@@ -1,29 +1,285 @@
 <!DOCTYPE html>
-<head>
-	<meta name="viewport" content="with=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css"/>
-	<title>WEB PROJECT</title>
-</head>
-<body>
-
-	<section class="header">
-		<nav>
-			<a href="index.html"><img src="Images/logo.jpg" style="width:60%"></a>
-			<div class="nav-links">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="resorts.html">BEACH RESORTS</a></li>
-					<li><a href="gallery.html">GALLERY</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-				</ul>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+			<!--=============== BOXICONS ===============-->
+			<link
+				href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+				rel="stylesheet"
+			/>
+	
+			<!--=============== SWIPER CSS ===============-->
+			<link
+				rel="stylesheet"
+				href="./assets/libraries/swiper-bundle.min.css"
+			/>
+	
+			<!--=============== CSS ===============-->
+			<link rel="stylesheet" href="./assets/css/style.css" />
+	
+			<title>RESORT</title>
+		</head>
+		<body>
+			<!--==================== HEADER ====================-->
+			<header class="header" id="header">
+				<nav class="nav container">
+					<a href="#home" class="nav__logo">RES<i class="bx bxs-map"></i>RT</a>
+	
+					<div class="nav__menu">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link active-link">
+									<i class="bx bx-home-alt"></i>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="Gallery.html" class="nav__link">
+									<i class="bx bx-building-house"></i>
+									<span>Gallery</span>
+								</a>
+							</li>	
+							<li class="nav__item">
+								<a href="contact.html" class="nav__link">
+									<i class="bx bx-phone"></i>
+									<span>Contact</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+	
+					<!-- theme -->
+					<i class="bx bx-moon change-theme" id="theme-button"></i>
+	
+					<a href="#button" class="button nav__button">Booking Now</a>
+				</nav>
+			</header>
+	
+			<!--==================== MAIN ====================-->
+			<main class="main">
+	
+	<!-- HOME -->
+	<section>
+		<div class="swiper-container">
+			<div>
+				<!-- ISLANDS-1 -->
+				<section class="islands">
+					<img
+						src="Img\bg.jpg"
+						alt=""
+						class="islands__bg"
+					/>
+					<div class="bg__overlay">
+						<div class="islands__container container">
+							<div
+								class="islands__data"
+								style="z-index: 99; position: relative"
+							>
+								<h2 class="islands__subtitle">
+									Explore
+								</h2>
+								<h1 class="islands__title">
+									VNV-RESORT
+								</h1>
+								<p class="islands__description">
+									Just Relax and Chill with your Homies <br/>
+									and enjoy the view.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
-		</nav>
+		</div>
+	</section>
+
+<!-- blog -->
+<section class="blog section" id="blog">
+	<div class="blog__container container">
+	  <span class="section__subtitle" style="text-align: center">All Blog</span>
+	  <h2 class="section__title" style="text-align: center">
+		Best Customer Story
+	  </h2>
+
+	  <div class="blog__content grid">
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="Img\5.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">Recommendations</h2>
+			<p class="blog__description">
+			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, impedit molestiae laudantium atque blanditiis dolores voluptatibus 
+			  quia a optio amet velit cupiditate mollitia fugiat. Itaque, ipsam mollitia! Amet, voluptatum numquam.
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">2 July 2019</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>76.5k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="Img/02.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">Benefits</h2>
+			<p class="blog__description">
+			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi, repudiandae saepe earum officiis commodi ipsa 
+			  temporibus asperiores reiciendis, pariatur voluptatibus cum eos iste laborum alias quam dolores. Nam, unde?
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">12 June 2017</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>356.7k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="Img/4.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">Benefits</h2>
+			<p class="blog__description">
+			  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex impedit itaque, dignissimos iusto, harum 
+			  quos explicabo voluptas perferendis porro saepe officia quis mollitia fugit illum libero nulla esse est.
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">20 July 2023</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>356.4k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+	  </div>
 	</div>
-	<div class="text-box">
-		<h1>IBA, ZAMBALES<br>BEACH RESORTS</h1>
-		<p>Looking for a place to relax? </p>
-		<a href="resorts.html" class="box-btn">VISIT US!</a>
+  </section>
+</main>
+
+<!------------------------ FOOTER ------------------------>
+<footer class="footer section">
+  <div class="footer__container container grid">
+	<div>
+	  <a href="#" class="footer__logo">
+		RES<i class="bx bxs-map"></i>RT
+	  </a>
+	  <p class="footer__description">
+		To make vibes and make people <br />
+		feel what relaxing feels like.
+	  </p>
 	</div>
+
+	<div class="footer__content">
+	  <div>
+		<h3 class="footer__title">About</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">About Us</a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Features </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">News & Blog</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Company</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">How We Work? </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Capital </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link"> Security</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Support</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">FAQs </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Support center </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link"> Contact Us</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Follow us</h3>
+
+		<ul class="footer__social">
+		  <a href="#" class="footer__social-link">
+			<i class="bx bxl-facebook-circle"></i>
+		  </a>
+		  <a href="#" class="footer__social-link">
+			<i class="bx bxl-instagram-alt"></i>
+		  </a>
+		  <a href="#" class="footer__social-link">
+			<i class="bx bxl-pinterest"></i>
+		  </a>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+  <div class="footer__info container">
+	<span class="footer__copy"> &#169;All rigths reserved </span>
+	<div class="footer__privacy">
+	  <a href="#">Terms & Agreements</a>
+	  <a href="#">Privacy Policy</a>
+	</div>
+  </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="bx bx-chevrons-up"></i>
+</a>
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="./assets/libraries/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="./assets/libraries/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="./assets/js/main.js"></script>
+
+
 </section>
-</body>
-</html>

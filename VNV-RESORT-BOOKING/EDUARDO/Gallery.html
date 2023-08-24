@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gallery</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--------------- BOX ICONS ---------------->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-------------- SWIPER CSS ---------------->
+    <link rel="stylesheet" href="./assets/libraries/swiper-bundle.min.css" />
+
+    <!-------------------- CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-------------------- HEADER ---------------------->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">RES<i class="bx bxs-map"></i>RT</a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <i class="bx bx-home-alt"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Gallery.html" class="nav__link">
+                <i class="bx bx-building-house"></i>
+                <span>Gallery</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- theme -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <a href="#button" class="button nav__button">Booking Now</a>
+      </nav>
+    </header>
+
 	<!-- CUSTOM CSS -->
 	<Link Rel="stylesheet" href="gallery.css">
 </head>
-<body>
-    <section class="header">
-		<nav>
-			<a href="index.html"><img src="Images/logo.jpg" style="width:60%"></a>
-			<div class="nav-links">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="resorts.html">BEACH RESORTS</a></li>
-					<li><a href="gallery.html">GALLERY</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</section>
 
-<input type="radio" name="photos" id="check1" checked>
-<input type="radio" name="photos" id="check2">
-<input type="radio" name="photos" id="check3">
-<input type="radio" name="photos" id="check4">
 
-<div class="container">
-<h1>OUR PHOTO GALLERY</h1>
-<div class="top-content">
-<h3>PHOTO GALLERY</h3>
-<Label for="check1">All Photos</Label>
-<Label for="check2">BAKASYUNAN</Label>
-<Label for="check3">FUNTASEA</Label>
-<Label for="check4">LINDAMAR</Label>
-</div>
+    <!------------------------ MAIN ------------------------>
+    <main class="main">
+        <!------------------- HOME ------------------>
+        <section>
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <section class="islands swiper-slide">
+
+                <img src="Img/Gallery.jpg"
+                alt=""
+					class="islands__bg"/>
+                    
+                <div class="islands__container container">
+                  <div class="islands__data">
+                    <h1 class="islands__title">Gallery</h1>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
 
 <div class="photo-gallery">
 
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN1.jpg">					
+    <img src="Img/BAKASYUNAN1.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN2.jpg">					
+    <img src="Img/BAKASYUNAN2.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN3.jpg">					
+    <img src="Img/BAKASYUNAN3.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN4.jpg">					
+    <img src="Img/BAKASYUNAN4.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN5.jpg">					
+    <img src="Img/BAKASYUNAN5.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN6.jpg">					
+    <img src="Img/BAKASYUNAN6.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN7.jpg">					
+    <img src="Img/BAKASYUNAN7.jpg" alt="" class="islands__bg"/>				
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN8.jpg">					
+    <img src="Img/BAKASYUNAN8.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN9.jpg">					
+    <img src="Img/BAKASYUNAN9.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN10.jpg">					
+    <img src="Img/BAKASYUNAN10.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN11.jpg">					
+    <img src="Img/BAKASYUNAN11.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Resort">
-    <img src="Img/BAKASYUNAN12.jpg">					
+    <img src="Img/BAKASYUNAN12.jpg" alt="" class="islands__bg"/>					
 </div>
 
 
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA1.jpg">					
+    <img src="Img/FUNTASEA1.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA2.jpg">					
+    <img src="Img/FUNTASEA2.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA3.jpg">
+    <img src="Img/FUNTASEA3.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA4.jpg">
+    <img src="Img/FUNTASEA4.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA5.jpg">
+    <img src="Img/FUNTASEA5.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA6.jpg">
+    <img src="Img/FUNTASEA6.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA7.jpg">					
+    <img src="Img/FUNTASEA7.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA8.jpg">					
+    <img src="Img/FUNTASEA8.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA9.jpg">
+    <img src="Img/FUNTASEA9.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA10.jpg">
+    <img src="Img/FUNTASEA10.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA11.jpg">
+    <img src="Img/FUNTASEA11.jpg" alt="" class="islands__bg"/>
 </div>	
 <div class="pic Restaurant">
-    <img src="Img/FUNTASEA12.jpg">
+    <img src="Img/FUNTASEA12.jpg" alt="" class="islands__bg"/>
 </div>	
 
 
 
 <div class="pic Exlore">	
-    <img src="Img/LINDAMAR1.jpg">
+    <img src="Img/LINDAMAR1.jpg" alt="" class="islands__bg"/>
 </div>			
 <div class="pic Exlore">	
-    <img src="Img/LINDAMAR2.jpg">					
+    <img src="Img/LINDAMAR2.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Exlore">	
-    <img src="Img/LINDAMAR3.jpg">					
+    <img src="Img/LINDAMAR3.jpg" alt="" class="islands__bg"/>					
 </div>
 <div class="pic Exlore">	
-    <img src="Img/LINDAMAR4.jpg">	
+    <img src="Img/LINDAMAR4.jpg" alt="" class="islands__bg"/>	
 </div>
+
+<script src="./assets/js/main.js"></script>
 
 </body>
 </html>
