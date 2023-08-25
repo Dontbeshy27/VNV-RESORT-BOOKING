@@ -105,7 +105,6 @@ body.dark-theme {
 .dark-theme .accordion-open,
 .dark-theme .accordion-open .value__accordion-icon,
 .dark-theme .accordion-open .value__accordion-arrow,
-.dark-theme .contact__img,
 .dark-theme .contact__card-box:hover,
 .dark-theme .scrollup {
   -webkit-box-shadow: none;
@@ -641,25 +640,8 @@ body.dark-theme {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.contact__orbe {
-  width: 266px;
-  height: 316px;
-  background-color: #f6f6f9;
-  border-radius: 135px 135px 16px 16px;
-}
-
-.contact__img {
-  position: absolute;
-  width: 250px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
-  inset: 0;
-  margin: auto;
-  -webkit-box-shadow: 0 16px 32px rgba(22, 39, 106, 0.25);
-          box-shadow: 0 16px 32px rgba(22, 39, 106, 0.25);
-}
+ 
+  /*---------------------------------------  */
 
 .contact__description {
   font-size: 0.813rem;
@@ -930,11 +912,7 @@ body.dark-theme {
     width: 230px;
     padding: 0.5rem 0.5rem 0.75rem;
   }
-  .value__img,
-  .contact__img {
-    width: 220px;
-    height: 260px;
-  }
+
   .value__orbe,
   .contact__orbe {
     width: 236px;
@@ -1080,17 +1058,7 @@ body.dark-theme {
     height: 641px;
     border-radius: 258px 258px 16px 16px;
   }
-  .value__img,
-  .contact__img {
-    width: 461px;
-    height: 601px;
-    border-radius: 238px 238px 12px 12px;
-  }
-  .value__img img,
-  .contact__img img {
-    max-width: initial;
-    width: 490px;
-  }
+
   .value__description,
   .contact__description {
     font-size: 0.938rem;
@@ -1276,15 +1244,6 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 
-.package-travel ul {
-  margin-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
-
-.package-travel ul li a {
-  color: var(--text-color);
-}
 
 @media screen and (min-width: 768px) {
   .content__container {
