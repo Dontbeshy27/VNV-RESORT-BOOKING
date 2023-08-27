@@ -1,3 +1,5 @@
+style.css
+
 *{
 	margin: 0;
 	padding: 0;
@@ -72,7 +74,7 @@ nav img {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	boder: 1px solid khaki;
+	border: 1px solid khaki;
 	padding: 12px 34px;
 	font-size: 13px;
 	background-color: white;
