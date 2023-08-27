@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .booking-form {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="contact number"],
+  input[type="email"],
+  input[type="gender"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Book Your Stay</h1>
+  </header>
+  <div class="container">
+    <div class="booking-form">
+      <h2>Make a Booking</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="contact number">Contact Number</label>
+            <input type="contact number" id="contact" name="contact number" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="gender" id="gender" name="gender" required>
+          </div>
+        <div class="form-group">
+          <label for="checkInDate">Check-in Date</label>
+          <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+        <div class="form-group">
+          <label for="checkOutDate">Check-out Date</label>
+          <input type="date" id="checkOutDate" name="checkOutDate" required>
+        </div>
+
+        
+        
+        
+        
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const fullName = document.getElementById('fullName').value;
+      const checkInDate = document.getElementById('checkInDate').value;
+      const checkOutDate = document.getElementById('checkOutDate').value;
+      
+
+      console.log('Booking details:');
+      console.log('Full Name:', fullName);
+      console.log('Check-in Date:', checkInDate);
+      console.log('Check-out Date:', checkOutDate);
+    });
+  </script>
+</body>
+</html>
