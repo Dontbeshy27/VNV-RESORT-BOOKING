@@ -3,30 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Booking Website</title>
-<style>
-  body {
+</head>
+<body>
+  <header>
+    <meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+			<!--=============== BOXICONS ===============-->
+			<link
+				href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+				rel="stylesheet"
+			/>
+	
+			<!--=============== SWIPER CSS ===============-->
+			<link
+				rel="stylesheet"
+				href="./assets/libraries/swiper-bundle.min.css"
+			/>
+	
+			<!--=============== CSS ===============-->
+			<link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/style2.css" />
+
+			<title>V&V Resort | Contact</title>
+		</head>
+		<body>
+			<!--==================== HEADER ====================-->
+			<header class="header" id="header">
+				<nav class="nav container">
+					<a href="index.html" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+	
+					<div class="nav__menu">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">
+									<i class="bx bx-home-alt"></i>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="Gallery.html" class="nav__link">
+									<i class="bx bx-building-house"></i>
+									<span>Gallery</span>
+								</a>
+							</li>	
+							<li class="nav__item">
+								<a href="contact.html" class="nav__link">
+									<i class="bx bx-phone"></i>
+									<span>Contact</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+	
+					<!-- theme -->
+					<i class="bx bx-moon change-theme" id="theme-button"></i>
+	
+                    <a href="booking.html" class="button nav__button">Booking Now</a>
+				</nav>
+
+        <style>
+          body {
     font-family: Arial, sans-serif;
-    background-image: url("Img/bookingbg.jpg");
   }
+
   header {
     background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
+    background-image: url(Img/bookingbg.jpg);
+    
   }
-  .container {
+  .container2 {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    
   }
+
   .booking-form {
+    max-width: 400px;
+    margin: 2rem auto;
     background-color: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
   }
   .form-group {
     margin-bottom: 1rem;
+    color: black;
   }
   label {
     display: block;
@@ -50,15 +120,13 @@
     border-radius: 3px;
     cursor: pointer;
   }
-</style>
-</head>
-<body>
-  <header>
-    <h1>Book Your Stay in VNV</h1>
+
+        </style>
+      
   </header>
-  <div class="container">
+  <div class="container2">
     <div class="booking-form">
-      <h2>Make a Booking</h2>
+      <h2>Start Booking Now</h2>
       <form id="bookingForm">
         <div class="form-group">
           <label for="fullName">Full Name</label>
@@ -84,10 +152,6 @@
           <label for="checkOutDate">Check-out Date</label>
           <input type="date" id="checkOutDate" name="checkOutDate" required>
         </div>
-
-        
-        
-        
         
         <button type="submit">Book Now</button>
       </form>
@@ -105,7 +169,120 @@
       console.log('Full Name:', fullName);
       console.log('Check-in Date:', checkInDate);
       console.log('Check-out Date:', checkOutDate);
+
+      const confirmationMessage = `
+Thanks for Booking at VNV:
+---------------------
+Full Name:     ${fullName}
+Check-in Date: ${checkInDate}
+Check-out Date:${checkOutDate}
+`;
+
+alert(confirmationMessage);
+
+      // alert('Done booking please confirm: \n' + 'Full Name: '+' \xa0' + fullName +' \n' + 'Check-in Date:'+'\xa0'+ checkInDate+'\n' + 'Check-out Date:'+' \xa0'+ checkOutDate);
     });
   </script>
+
+
+<!------------------------ FOOTER ------------------------>
+<footer class="footer section">
+  <div class="footer__container container grid">
+    <div>
+      <a href="#" class="footer__logo">
+        V&V RES<i class="bx bxs-map"></i>RT
+      </a>
+      <p class="footer__description">
+        To make vibes and make people <br />
+        feel what relaxing feels like.
+      </p>
+    </div>
+
+    <div class="footer__content">
+      <div>
+        <h3 class="footer__title">About</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Features </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">News & Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Company</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">How We Work? </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Capital </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"> Security</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Support</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">FAQs </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Support center </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Follow us</h3>
+
+        <ul class="footer__social">
+          <a href="https://www.facebook.com/dontbeshy27" class="facebook">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="https://www.instagram.com/iveroooooo/" class="instagram">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://www.pinterest.ph" class="pinterest">
+            <i class="bx bxl-pinterest"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__info container">
+    <span class="footer__copy"> &#169;All rigths reserved </span>
+    <div class="footer__privacy">
+      <a href="#">Terms & Agreements</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="bx bx-chevrons-up"></i>
+</a>
+
+
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
+
+</section>
+
 </body>
 </html>
