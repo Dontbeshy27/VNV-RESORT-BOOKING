@@ -18,14 +18,19 @@
 	
 			<!--=============== CSS ===============-->
 			<link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/contact.css">
 	
 			<title>V&V Resort | Contact</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		</head>
 		<body>
 			<!--==================== HEADER ====================-->
 			<header class="header" id="header">
 				<nav class="nav container">
-					<a href="#home" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+					<a href="index.html" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
 	
 					<div class="nav__menu">
 						<ul class="nav__list">
@@ -87,65 +92,110 @@
                 </div>
             </section>
 
-            <!-- contact -->
             <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <div class="contact__container container grid">
-                 
-              
-                  <div class="contact__content">
-                    <div class="contact__data">
-                      <span class="section__subtitle">Need Help?</span>
-                      <h2 class="section__title">
-                        Get in Touch with Us
-                      </h2>
-                      <p class="contact__description">
-                        Have questions or need assistance? Feel free to contact us anytime. We're here to help!
-                      </p>
-                    </div>
-              
-                    <div class="contact__card">
-                      <div class="contact__card-box">
-                        <div class="contact__card-info">
-                          <i class="bx bxs-phone-call"></i>
-                          <div>
-                            <h3 class="contact__card-title">
-                              Call Us
-                            </h3>
-                            <p class="contact__card-description">
-                              +639123456789
-                            </p>
-                          </div>
+            <section>
+              <div class="container flow-content">
+                <h2 class="section-title">Our team</h2>
+                <ul role="list" class="grid">
+                  <li>
+                    <article class="card" data-visible="false">
+                      <div class="card__front flow-content">
+                        <img class="card__img mx-auto" src="/img/radiant-gradient.png" />
+                        <div class="flow-content" data-spacing="sm">
+                          <p class="card__name">Mark Renier Mercado</p>
+                          <p class="card__position">Web Developer</p>
                         </div>
-                        <button class="button contact__card-button">
-                          Call Now
-                        </button>
                       </div>
-              
-                      <!-- Repeat the following card-box structure for other contact options -->
-                      <div class="contact__card-box">
-                        <div class="contact__card-info">
-                          <i class="bx bxs-message"></i>
-                          <div>
-                            <h3 class="contact__card-title">
-                              Messenger
-                            </h3>
-                            <p class="contact__card-description">
-                              Developer.me
-                            </p>
-                          </div>
+                      <div class="card__back flow-content">
+                        <p class="card__name">Mark Renier Mercado</p>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <ul role="list" class="card__social flex-group">
+                          <li>
+                            <a href="https://m.me/micronomix">
+                              <i class="fa-brands fa-facebook "></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/mark-renier-mercado-2a6466268">
+                              <i class="fa-brands fa-linkedin "></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <footer class="card__footer">
+                        <button data-card-controller class="card__toggle">
+                          <i class="fa-solid fa-plus card__toggle-icon"></i>
+                        </button>
+                      </footer>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="card" data-visible="false">
+                      <div class="card__front flow-content">
+                        <img class="card__img mx-auto" src="/img/flat-mountains.png" />
+                        <div class="flow-content" data-spacing="sm">
+                          <p class="card__name">Edward Pacheco</p>
+                          <p class="card__position">Web Developer</p>
                         </div>
-                        <button class="button contact__card-button">
-                          Chat Now
-                        </button>
                       </div>
-                      
-                      <!-- Repeat the above structure for other contact options -->
-                    </div>
-                  </div>
-                </div>
-              </section>
-              
+                      <div class="card__back flow-content">
+                        <p class="card__name">Edward Pacheco</p>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <ul role="list" class="card__social flex-group">
+                          <li>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <footer class="card__footer">
+                        <button data-card-controller class="card__toggle">
+                          <i class="fa-solid fa-plus card__toggle-icon"></i>
+                        </button>
+                      </footer>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="card" data-visible="false">
+                      <div class="card__front flow-content">
+                        <img class="card__img mx-auto" src="/img/flat-mountains.png"/>
+                        <div class="flow-content" data-spacing="sm">
+                          <p class="card__name">Shaun Daniel Dequilla</p>
+                          <p class="card__position">Web Developer</p>
+                        </div>
+                      </div>
+                      <div class="card__back flow-content">
+                        <p class="card__name">Shaun Daniel Dequilla</p>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <ul role="list" class="card__social flex-group">
+                          <li>
+                            <a href="https://www.facebook.com/shaundy.dequilla/">
+                              <i class="fa-brands fa-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/in/shaun-dequilla-0a31491a4/">
+                              <i class="fa-brands fa-linkedin "></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <footer class="card__footer">
+                        <button data-card-controller class="card__toggle">
+                          <i class="fa-solid fa-plus card__toggle-icon"></i>
+                        </button>
+                      </footer>
+                    </article>
+                  </li>   
+                </ul>
+              </div>
+            </section>  
 <!------------------------ FOOTER ------------------------>
 <footer class="footer section">
     <div class="footer__container container grid">
@@ -241,7 +291,8 @@
   
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
-  
+   <!--=============== CONTACT JS ===============-->
+  <script src="assets/js/contact.js"></script>
   
   </section>
   
