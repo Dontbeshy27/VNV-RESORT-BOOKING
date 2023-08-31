@@ -5,7 +5,7 @@
 	--bg-secondary: #14273e;
 	--text-primary: #fff;
 	--text-secondary: #ccc;
-  }
+  /* }
   *,
   *::before,
   *::after {
@@ -17,7 +17,7 @@
   }
   
   html {
-	color-scheme: dark;
+	color-scheme: dark; */
   }
   body {
 	font-family: system-ui, sans-serif;
