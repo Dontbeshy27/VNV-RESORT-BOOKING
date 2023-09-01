@@ -29,4 +29,3 @@ Route::get('/', function () {
     Route::put('/bookings/{booking}', [BookingController::class, 'update'])->name('bookings.update');
 
     Route::delete('/bookings/{booking}', [BookingController::class, 'destroy'])->name('bookings.destroy');
-
