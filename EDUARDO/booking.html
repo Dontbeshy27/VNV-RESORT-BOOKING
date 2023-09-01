@@ -90,13 +90,13 @@
   .booking-form {
     max-width: 400px;
     margin: 2rem auto;
-    background-color: #f4f4f4;
+    background-color: black;
     padding: 1rem;
     border-radius: 5px;
   }
   .form-group {
     margin-bottom: 1rem;
-    color: black;
+    color: white;
   }
   label {
     display: block;
@@ -153,7 +153,7 @@
           <input type="date" id="checkOutDate" name="checkOutDate" required>
         </div>
         
-        <button type="submit">Book Now</button>
+        <button class="button" type="submit">Book Now</button>
       </form>
     </div>
   </div>
@@ -178,8 +178,7 @@ Check-in Date: ${checkInDate}
 Check-out Date:${checkOutDate}
 `;
 
-alert(confirmationMessage);
-
+alert(confirmationMessage);   
       // alert('Done booking please confirm: \n' + 'Full Name: '+' \xa0' + fullName +' \n' + 'Check-in Date:'+'\xa0'+ checkInDate+'\n' + 'Check-out Date:'+' \xa0'+ checkOutDate);
     });
   </script>
