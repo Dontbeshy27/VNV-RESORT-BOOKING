@@ -5,15 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller as RoutingController;
 use Illuminate\Support\Facades\DB;
 
-class BookingController extends RoutingController
+class BookingController extends Controller
 {
     public function index()
     {
-        $data = Booking::paginate(10);
-        return view('booking.index', ['bookings' => $data]);
+        $bookings = Booking::all();
+        return view('booking.index', compact('bookings'));
     }
 
     public function show(Booking $booking)
@@ -29,7 +28,7 @@ class BookingController extends RoutingController
     public function update(Request $request, Booking $booking)
     {
         $booking->update($request->all());
-        return redirect()->route('bookings.show', ['booking' => $booking->id]);
+        return redirect()->route('booking.show', ['booking' => $booking->id]);
     }
 
     public function create()
@@ -39,9 +38,20 @@ class BookingController extends RoutingController
 
     public function store(Request $request)
     {
-        Booking::create($request->all());
-        return redirect()->route('bookings.index');
+        $validatedData = $request->validate([
+            'fullname' => 'required|string',
+            'contact' => 'required|bigInteger',
+            'email' => 'required|string',
+            'gender' => 'required|string',
+            'check_in' => 'required|date',
+            'check_out' => 'required|date|after:check_in',
+        ]);
+    
+        Booking::create($validatedData);
+    
+        return redirect()->route('booking.show')->with('success', 'Booking created successfully.');
     }
+    
 
     public function destroy(Booking $booking)
     {
