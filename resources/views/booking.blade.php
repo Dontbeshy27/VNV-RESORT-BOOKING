@@ -35,7 +35,7 @@
 			<!--==================== HEADER ====================-->
 			<header class="header" id="header">
 				<nav class="nav container">
-					<a href="./views/index.blade.php" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+					<a href="index.blade.php" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
 	
 					<div class="nav__menu">
 						<ul class="nav__list">
@@ -63,7 +63,7 @@
 					<!-- theme -->
 					<i class="bx bx-moon change-theme" id="theme-button"></i>
 	
-                    <a href="booking.blade.php" class="button nav__button">Booking Now</a>
+                    <a href="/resources/views/booking.blade.php" class="button nav__button">Booking Now</a>
 				</nav>
 
         <style>
