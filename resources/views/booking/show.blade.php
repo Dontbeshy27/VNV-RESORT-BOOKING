@@ -6,7 +6,7 @@
     <h3>Contact Number : {{$booking -> contact_number}}</h3>
     <h3>Email: {{$booking -> email}}</h3>
 
-    <p><a class="btn btn-primary" {{route('bookings.index')}}">Back to List</a></p>
+    <p><a class="btn btn-primary" {{ route('bookings.index')}}">Back to List</a></p>
     <p><a class="btn btn-primary" {{route('bookings.index')}}">Back to List</a></p>
     <form action="{{route('bookings.destroy', $booking->id)}}" method="POST">
         @method('DELETE')

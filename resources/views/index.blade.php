@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+			<!--=============== BOXICONS ===============-->
+			<link
+				href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+				rel="stylesheet"
+			/>
+	
+			<!--=============== SWIPER CSS ===============-->
+			<link
+				rel="stylesheet"
+				href="./assets/libraries/swiper-bundle.min.css"
+			/>
+	
+			<!--=============== CSS ===============-->
+			<link rel="stylesheet" href="/VNV-RESORT-BOOKING/resources/css/style.css" />
+
+			<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		  	/>
+	
+			<title>V&V RESORT</title>
+		</head>
+		<body>
+			<!--==================== HEADER ====================-->
+			<header class="header" id="header">
+				<nav class="nav container">
+					<a href="./index.blade.php" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+	
+					<div class="nav__menu">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="./index.blade.php" class="nav__link active-link flick">
+									<i class="bx bx-home-alt"></i>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="Gallery.blade.php" class="nav__link">
+									<i class="bx bx-building-house"></i>
+									<span>Gallery</span>
+								</a>
+							</li>	
+							<li class="nav__item">
+								<a href="contact.blade.php" class="nav__link">
+									<i class="bx bx-phone"></i>
+									<span>Contact</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+	
+					<!-- theme -->
+					<i class="bx bx-moon change-theme" id="theme-button"></i>
+	
+					<a href="./booking.blade.php" class="button nav__button">Booking Now</a>
+				</nav>
+			</header>
+	
+			<!--==================== MAIN ====================-->
+			<main class="main">
+	
+	<!-- HOME -->
+	<section>
+		<div class="swiper-container">
+			<div>
+				<!-- ISLANDS-1 -->
+				<section class="islands">
+						<video autoplay loop muted plays-inline class="back">
+							<source src="/VNV-RESORT-BOOKING/resources/videos/landing-page.mp4" type="video/mp4">
+						</video>
+					<!-- <img
+						src="Img\bg.jpg"
+						alt=""
+						class="islands__bg"
+					/> -->
+					<div class="bg__overlay">
+						<div class="islands__container container">
+							<div
+								class="islands__data"
+								style="z-index: 99; position: relative"
+							>
+								<h2 class="islands__subtitle  animate__animated animate__rollIn">
+									Explore
+								</h2>
+								<h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s">
+									V&V-RESORT
+								</h1>
+								<p class="islands__description animate__animated animate__jackInTheBox animate__delay-1s">
+									Just Relax and Chill with your Homies <br/>
+									and enjoy the view.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+
+<!-- blog -->
+<section class="blog section" id="blog">
+	<div class="blog__container container">
+	  <span class="section__subtitle" style="text-align: center">All Blog</span>
+	  <h2 class="section__title" style="text-align: center">
+		Best Customer Story
+	  </h2>
+
+	  <div class="blog__content grid">
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="/VNV-RESORT-BOOKING/resources/Img/5.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">Recommendations</h2>
+			<p class="blog__description">
+			  I think this is the best resort here in Zambales because it has good recommendations from the stuff here and the owner is 
+			  very polite and humble. The house is clean and it has a aircon for only 1,500 pesos per night. ~ unknown source
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">2 July 2021</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>76.5k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="/VNV-RESORT-BOOKING/resources/Img/02.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">Benefits</h2>
+			<p class="blog__description">
+			 The Benefits here in VNV Beach Resort are many for example you can chill and relax here in the seashore, you can 
+			 sing a song in a karaoke inside the resort this is free btw and the stuff they accomodate me very well. ~ Kyla Sopreano
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">12 June 2020</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>356.7k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+		<article class="blog__card">
+		  <div class="blog__image">
+			<img src="/VNV-RESORT-BOOKING/resources/Img/4.jpg" alt="" class="blog__img" />
+			<a href="#" class="blog__button">
+			  <i class="bx bx-right-arrow-alt"></i>
+			</a>
+		  </div>
+
+		  <div class="blog__data">
+			<h2 class="blog__title">View</h2>
+			<p class="blog__description">
+			  The view here is great you can see the ships of navy in the West Phillipine sea and the sea are so calm when we are here 
+			  I'm so glad the my friend recommend this resort to us. ~ Ivero sanity 
+			</p>
+
+			<div class="blog__footer">
+			  <div class="blog__reaction">20 July 2023</div>
+			  <div class="blog__reaction">
+				<i class="bx bx-show"></i>
+				<span>356.4k</span>
+			  </div>
+			</div>
+		  </div>
+		</article>
+	  </div>
+	</div>
+  </section>
+</main>
+
+<!------------------------ FOOTER ------------------------>
+<footer class="footer section">
+  <div class="footer__container container grid">
+	<div>
+	  <a href="#" class="footer__logo">
+		V&V RES<i class="bx bxs-map"></i>RT
+	  </a>
+	  <p class="footer__description">
+		To make vibes and make people <br />
+		feel what relaxing feels like.
+	  </p>
+	</div>
+
+	<div class="footer__content">
+	  <div>
+		<h3 class="footer__title">About</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">About Us</a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Features </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">News & Blog</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Company</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">How We Work? </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Capital </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link"> Security</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Support</h3>
+
+		<ul class="footer__links">
+		  <li>
+			<a href="#" class="footer__link">FAQs </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link">Support center </a>
+		  </li>
+		  <li>
+			<a href="#" class="footer__link"> Contact Us</a>
+		  </li>
+		</ul>
+	  </div>
+	  <div>
+		<h3 class="footer__title">Follow us</h3>
+
+		<ul class="footer__social">
+		  <a href="https://www.facebook.com/dontbeshy27" class="facebook">
+			<i class="bx bxl-facebook-circle"></i>
+		  </a>
+		  <a href="https://www.instagram.com/iveroooooo/" class="instagram">
+			<i class="bx bxl-instagram-alt"></i>
+		  </a>
+		  <a href="https://www.pinterest.ph" class="pinterest">
+			<i class="bx bxl-pinterest"></i>
+		  </a>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+  <div class="footer__info container">
+	<span class="footer__copy"> &#169;All rigths reserved </span>
+	<div class="footer__privacy">
+	  <a href="#">Terms & Agreements</a>
+	  <a href="#">Privacy Policy</a>
+	</div>
+  </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="bx bx-chevrons-up"></i>
+</a>
+
+
+<!--=============== MAIN JS ===============-->
+<script src="/VNV-RESORT-BOOKING/resources/js/main.js"></script>
+
+
+</section>

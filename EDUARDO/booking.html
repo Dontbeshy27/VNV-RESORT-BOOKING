@@ -128,23 +128,22 @@
   <div class="container2">
     <div class="booking-form">
       <h2>Start Booking Now</h2>
-      <form id="bookingForm">
+      <form id="bookingForm" action="/EDUARDO/connection.php" method="POST">
         <div class="form-group">
           <label for="fullName">Full Name</label>
           <input type="text" id="fullName" name="fullName" required placeholder="Full name">
         </div>
         <div class="form-group">
             <label for="contact number">Contact Number</label>
-            <input type="contact number" id="contact" name="contact number" required placeholder="+639123456789">
-          </div>
+            <input type="tel" id="contact" name="contact_number" required placeholder="+639123456789">
+          </div>  
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="example@email.com">
           </div>
           <div class="form-group">
             <label for="gender">Gender</label>
-            <input type="radio" id="gender" name="gender" required>Male
-            <input type="radio" id="gender" name="gender" required>Female
+            <input type="text" id="gender" name="gender" required placeholder="Male/Female">
           </div>
         <div class="form-group">
           <label for="checkInDate">Check-in Date</label>
@@ -155,7 +154,7 @@
           <input type="date" id="checkOutDate" name="checkOutDate" required>
         </div>
         
-        <button class="button" type="submit">Book Now</button>
+        <button class="button" type="submit" name="submit">Book Now</button>
       </form>
     </div>
   </div>

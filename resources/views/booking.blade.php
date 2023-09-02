@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking Website</title>
+</head>
+<body>
+  <header>
+    <meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+			<!--=============== BOXICONS ===============-->
+			<link
+				href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+				rel="stylesheet"
+			/>
+	
+			<!--=============== SWIPER CSS ===============-->
+			<link
+				rel="stylesheet"
+				href="./assets/libraries/swiper-bundle.min.css"
+			/>
+	
+			<!--=============== CSS ===============-->
+			<link rel="stylesheet" href="/resources/css/style.css" />
+      <link rel="stylesheet" href="/resources/css/style2.css" />
+
+			<title>V&V Resort | Contact</title>
+		</head>
+		<body>
+			<!--==================== HEADER ====================-->
+			<header class="header" id="header">
+				<nav class="nav container">
+					<a href="./views/index.blade.php" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+	
+					<div class="nav__menu">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="./views/index.blade.php" class="nav__link">
+									<i class="bx bx-home-alt"></i>
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="./views/Gallery.blade.php" class="nav__link">
+									<i class="bx bx-building-house"></i>
+									<span>Gallery</span>
+								</a>
+							</li>	
+							<li class="nav__item">
+								<a href="./views/contact.blade.php" class="nav__link">
+									<i class="bx bx-phone"></i>
+									<span>Contact</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+	
+					<!-- theme -->
+					<i class="bx bx-moon change-theme" id="theme-button"></i>
+	
+                    <a href="booking.blade.php" class="button nav__button">Booking Now</a>
+				</nav>
+
+        <style>
+          body {
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-image: url(/resources/Img/bookingbg.jpg);
+    
+  }
+  .container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .booking-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="contact number"],
+  input[type="email"],
+  input[type="gender"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+        </style>
+      
+  </header>
+  <div class="container2">
+    <div class="booking-form">
+      <h2>Start Booking Now</h2>
+      <form id="bookingForm" action="/booking" method="POST">
+        @csrf
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="Full name">
+        </div>
+        <div class="form-group">
+            <label for="contact number">Contact Number</label>
+            <input type="text" id="contact" name="contact_number" required placeholder="+639123456789">
+          </div>  
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender" required placeholder="Male/Female">
+          </div>
+        <div class="form-group">
+          <label for="checkInDate">Check-in Date</label>
+          <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+        <div class="form-group">
+          <label for="checkOutDate">Check-out Date</label>
+          <input type="date" id="checkOutDate" name="checkOutDate" required>
+        </div>
+        
+        <button class="button" type="submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+  
+
+<!------------------------ FOOTER ------------------------>
+<footer class="footer section">
+  <div class="footer__container container grid">
+    <div>
+      <a href="#" class="footer__logo">
+        V&V RES<i class="bx bxs-map"></i>RT
+      </a>
+      <p class="footer__description">
+        To make vibes and make people <br />
+        feel what relaxing feels like.
+      </p>
+    </div>
+
+    <div class="footer__content">
+      <div>
+        <h3 class="footer__title">About</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Features </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">News & Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Company</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">How We Work? </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Capital </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"> Security</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Support</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">FAQs </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Support center </a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Follow us</h3>
+
+        <ul class="footer__social">
+          <a href="https://www.facebook.com/dontbeshy27" class="facebook">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="https://www.instagram.com/iveroooooo/" class="instagram">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://www.pinterest.ph" class="pinterest">
+            <i class="bx bxl-pinterest"></i>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__info container">
+    <span class="footer__copy"> &#169;All rigths reserved </span>
+    <div class="footer__privacy">
+      <a href="#">Terms & Agreements</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="bx bx-chevrons-up"></i>
+</a>
+
+
+
+<!--=============== MAIN JS ===============-->
+<script src="/resources/js/main.js"></script>
+
+
+</section>
+
+</body>
+</html>

@@ -16,13 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/booking', [BookingController::class, 'create'])->name('booking.create');
+Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
 
-
-    Route::get('/', [BookingController::class, 'index']);
-    Route::post('/bookings', [BookingController::class, 'store'])->name("booking.store");
 
 
 
