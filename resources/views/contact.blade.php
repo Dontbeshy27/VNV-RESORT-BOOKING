@@ -78,7 +78,7 @@
                         <!--========== ISLANDS 1 ==========-->
                         <section class="islands swiper-slide">
                           <video autoplay loop muted plays-inline class="back">
-                            <source src= "{{ asset('EDUARDO/assets/videos/contact-page.mp4') }}" type="video/mp4">
+                            <source src= "{{ asset('/EDUARDO/assets/video/contact.mp4') }}" type="video/mp4">
                           </video> 
                             <div class="bg__overlay">
                                 <div class="islands__container container">
@@ -105,15 +105,15 @@
                   <li>
                     <article class="card" data-visible="false">
                       <div class="card__front flow-content">
-                        <img class="card__img mx-auto" src="/img/radiant-gradient.png" />
+                        <img class="card__img mx-auto" src="{{ asset('EDUARDO/assets/img/mark.jpg') }}" alt="" />
                         <div class="flow-content" data-spacing="sm">
                           <p class="card__name">Mark Renier Mercado</p>
-                          <p class="card__position">Web Developer</p>
+                          <p class="card__position">Web Developer/Front-End Engineer</p>
                         </div>
                       </div>
                       <div class="card__back flow-content">
                         <p class="card__name">Mark Renier Mercado</p>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <q>Hi, I'm Mark Mercado your Web Dev and Software Engineer.</q>
                         <ul role="list" class="card__social flex-group">
                           <li>
                             <a href="https://m.me/micronomix">
@@ -137,15 +137,15 @@
                   <li>
                     <article class="card" data-visible="false">
                       <div class="card__front flow-content">
-                        <img class="card__img mx-auto" src="/img/flat-mountains.png" />
+                        <img class="card__img mx-auto" src= "{{ asset('EDUARDO/assets/img/edward') }}" alt="" />
                         <div class="flow-content" data-spacing="sm">
                           <p class="card__name">Edward Pacheco</p>
-                          <p class="card__position">Web Developer</p>
+                          <p class="card__position">Web Developer/Sotware Engineer</p>
                         </div>
                       </div>
                       <div class="card__back flow-content">
                         <p class="card__name">Edward Pacheco</p>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <q>Hi, I'm Edward Pacheco your Web Dev and Software Engineer.</q>
                         <ul role="list" class="card__social flex-group">
                           <li>
                             <a href="#">
@@ -169,15 +169,15 @@
                   <li>
                     <article class="card" data-visible="false">
                       <div class="card__front flow-content">
-                        <img class="card__img mx-auto" src="/img/flat-mountains.png"/>
+                        <img class="card__img mx-auto" src="{{ asset('EDUARDO/assets/img/shaun') }}" alt="" />
                         <div class="flow-content" data-spacing="sm">
                           <p class="card__name">Shaun Daniel Dequilla</p>
-                          <p class="card__position">Web Developer</p>
+                          <p class="card__position">Web Developer/Back-End Engineer</p>
                         </div>
                       </div>
                       <div class="card__back flow-content">
                         <p class="card__name">Shaun Daniel Dequilla</p>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et dictum sem.</q>
+                        <q>Hi, I'm Shaun Dequilla your Web Dev and Software Engineer.</q>
                         <ul role="list" class="card__social flex-group">
                           <li>
                             <a href="https://www.facebook.com/shaundy.dequilla/">
