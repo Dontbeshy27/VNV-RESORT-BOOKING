@@ -70,14 +70,14 @@
     font-family: Arial, sans-serif;
   }
 
-  /* header {
+  header {
     background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
     background-image: url(Img/bookingbg.jpg);
-    
-  } */
+    background
+  }
   .container2 {
     max-width: 800px;
     margin: 0 auto;

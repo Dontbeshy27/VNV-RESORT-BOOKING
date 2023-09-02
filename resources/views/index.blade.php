@@ -72,7 +72,7 @@
 				<!-- ISLANDS-1 -->
 				<section class="islands">
 						<video autoplay loop muted plays-inline class="back">
-							<source src="{{ asset('resources/videos/landing-page.mp4') }}" type="video/mp4">
+							<source src="{{ asset('/videos/landing-page.mp4') }}" type="video/mp4">
 						</video>
 					<!-- <img
 						src="Img\bg.jpg"
@@ -138,7 +138,7 @@
 		</article>
 		<article class="blog__card">
 		  <div class="blog__image">
-			<img src="/VNV-RESORT-BOOKING/resources/Img/02.jpg" alt="" class="blog__img" />
+			<img src="{{asset('resources/Img/02.jpg')}}" alt="" class="blog__img" />
 			<a href="#" class="blog__button">
 			  <i class="bx bx-right-arrow-alt"></i>
 			</a>
