@@ -85,10 +85,10 @@
 								class="islands__data"
 								style="z-index: 99; position: relative"
 							>
-								<h2 class="islands__subtitle  animate__animated animate__rollIn">
+								<h2 class="islands__subtitle  animate__animated animate__rollIn flick">
 									Explore
 								</h2>
-								<h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s">
+								<h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s flick">
 									V&V-RESORT
 								</h1>
 								<p class="islands__description animate__animated animate__jackInTheBox animate__delay-1s">

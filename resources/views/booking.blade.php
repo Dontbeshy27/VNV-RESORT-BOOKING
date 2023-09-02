@@ -15,7 +15,7 @@
 	
 			<!--=============== BOXICONS ===============-->
 			<link
-				href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+				href="{{asset('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css')}}"
 				rel="stylesheet"
 			/>
 	
@@ -70,13 +70,13 @@
     font-family: Arial, sans-serif;
   }
 
-  header {
+  /* header {
     background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
     background-image: url(Img/bookingbg.jpg);
-  }
+  } */
   .container2 {
     max-width: 800px;
     margin: 0 auto;
