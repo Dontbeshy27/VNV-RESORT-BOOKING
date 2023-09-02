@@ -22,7 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/booking', [BookingController::class, 'create'])->name('booking.create');
 Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
 
-
+Route::get('/index', [BookingController::class, 'index'])->name('index.index');
+Route::get('/contact', [BookingController::class, 'contact'])->name('contact.contact');
 
 
 

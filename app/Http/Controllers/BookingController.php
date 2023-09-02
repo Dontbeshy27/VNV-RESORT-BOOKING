@@ -14,6 +14,16 @@ class BookingController extends Controller
         return view('booking');
     }
 
+    public function index()
+    {
+        return view('/index');
+    }
+
+    public function contact()
+    {
+        return view('/contact');
+    }
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([

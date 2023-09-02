@@ -17,7 +17,10 @@
 			/>
 	
 			<!--=============== CSS ===============-->
-			<link rel="stylesheet" href="/VNV-RESORT-BOOKING/resources/css/style.css" />
+      <link
+            rel="stylesheet"
+            href="{{ asset('EDUARDO/assets/css/contact.css') }}"
+        />
       <link rel="stylesheet" href="/VNV-RESORT-BOOKING/resources/css/contact.css">
 	
 			<title>V&V Resort | Contact</title>
@@ -75,7 +78,7 @@
                         <!--========== ISLANDS 1 ==========-->
                         <section class="islands swiper-slide">
                           <video autoplay loop muted plays-inline class="back">
-                            <source src="/VNV-RESORT-BOOKING/resources/videos/contact-page.mp4" type="video/mp4">
+                            <source src= "{{ asset(videos/contact-page.mp4) }}" type="video/mp4">
                           </video> 
                             <div class="bg__overlay">
                                 <div class="islands__container container">
