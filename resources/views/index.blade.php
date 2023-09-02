@@ -91,7 +91,7 @@
 								<h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s flick">
 									V&V-RESORT
 								</h1>
-								<p class="islands__description animate__animated animate__jackInTheBox animate__delay-1s">
+								<p class="islands__description animate__animated animate__jackInTheBox animate__delay-1s flick">
 									Just Relax and Chill with your Homies <br/>
 									and enjoy the view.
 								</p>
