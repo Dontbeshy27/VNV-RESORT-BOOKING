@@ -30,24 +30,24 @@
 			<!--==================== HEADER ====================-->
 			<header class="header" id="header">
 				<nav class="nav container">
-					<a href="./index.blade.php" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
+					<a href="/index" class="nav__logo">V&V RES<i class="bx bxs-map"></i>RT</a>
 	
 					<div class="nav__menu">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="./index.blade.php" class="nav__link active-link flick">
+								<a href="/index" class="nav__link active-link flick">
 									<i class="bx bx-home-alt"></i>
 									<span>Home</span>
 								</a>
 							</li>
 							<li class="nav__item">
-								<a href="Gallery.blade.php" class="nav__link">
+								<a href="/gallery" class="nav__link">
 									<i class="bx bx-building-house"></i>
 									<span>Gallery</span>
 								</a>
 							</li>	
 							<li class="nav__item">
-								<a href="contact.blade.php" class="nav__link">
+								<a href="/contact" class="nav__link">
 									<i class="bx bx-phone"></i>
 									<span>Contact</span>
 								</a>
@@ -58,7 +58,7 @@
 					<!-- theme -->
 					<i class="bx bx-moon change-theme" id="theme-button"></i>
 	
-					<a href="./booking.blade.php" class="button nav__button">Booking Now</a>
+					<a href="/booking" class="button nav__button">Booking Now</a>
 				</nav>
 			</header>
 	
@@ -72,7 +72,7 @@
 				<!-- ISLANDS-1 -->
 				<section class="islands">
 						<video autoplay loop muted plays-inline class="back">
-							<source src="{{ asset('videos/landing-page.mp4') }}" type="video/mp4">
+							<source src="{{ asset('resources/videos/landing-page.mp4') }}" type="video/mp4">
 						</video>
 					<!-- <img
 						src="Img\bg.jpg"

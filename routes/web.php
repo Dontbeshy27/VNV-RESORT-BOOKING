@@ -24,6 +24,7 @@ Route::post('/booking', [BookingController::class, 'store'])->name('booking.stor
 
 Route::get('/index', [BookingController::class, 'index'])->name('index.index');
 Route::get('/contact', [BookingController::class, 'contact'])->name('contact.contact');
+Route::get('/gallery', [BookingController::class, 'gallery'])->name('gallery.gallery');
 
 
 

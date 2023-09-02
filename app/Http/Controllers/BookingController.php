@@ -24,6 +24,11 @@ class BookingController extends Controller
         return view('/contact');
     }
 
+    public function gallery()
+    {
+        return view('/gallery');
+    }
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([
