@@ -76,7 +76,6 @@
     padding: 1rem;
     text-align: center;
     background-image: url(Img/bookingbg.jpg);
-    background
   }
   .container2 {
     max-width: 800px;
