@@ -83,10 +83,10 @@
                             <div class="bg__overlay">
                                 <div class="islands__container container">
                                     <div class="islands__data">
-                                        <h2 class="islands__subtitle animate__animated animate__rollIn">
+                                        <h2 class="islands__subtitle animate__animated animate__rollIn flick">
                                             Need Help?
                                         </h2>
-                                        <h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s">
+                                        <h1 class="islands__title animate__animated animate__jackInTheBox animate__delay-1s flick">
                                             Contact Us
                                         </h1>
                                     </div>
