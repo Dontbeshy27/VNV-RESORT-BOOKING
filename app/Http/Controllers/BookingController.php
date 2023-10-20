@@ -11,7 +11,26 @@ class BookingController extends Controller
     public function create()
     {
      
+<<<<<<< HEAD
         return view('booking'); 
+=======
+        return view('booking');
+    }
+
+    public function index()
+    {
+        return view('/index');
+    }
+
+    public function contact()
+    {
+        return view('/contact');
+    }
+
+    public function gallery()
+    {
+        return view('/gallery');
+>>>>>>> 985bc3c9b1ca5a52cc3979222303b9a72d3d2741
     }
 
     public function store(Request $request)
